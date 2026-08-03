@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────
-// FARMSTEAD LEDGER — Full Supabase Edition
+// TINYLEDGER — Full Supabase Edition
 // v2.0 — with Expense Splitting, Balances & Settle Up
 //
 // This app is configured entirely via environment variables so it

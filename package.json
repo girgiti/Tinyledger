@@ -1,5 +1,5 @@
 {
-  "name": "farmstead-ledger",
+  "name": "tinyledger",
   "version": "1.0.0",
   "description": "Secure multi-partner farm business ledger",
   "type": "module",
