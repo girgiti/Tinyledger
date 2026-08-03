@@ -1,5 +1,5 @@
 -- ============================================================
--- PANCHATATVA FARMS — Migration 002: Splits & Settlements
+-- TINYLEDGER — Migration 002: Splits & Settlements
 -- Run this in: Supabase Dashboard > SQL Editor > New Query
 -- Run AFTER 001_schema.sql
 -- ============================================================

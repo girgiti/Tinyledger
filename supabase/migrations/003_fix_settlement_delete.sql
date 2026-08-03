@@ -1,5 +1,5 @@
 -- ============================================================
--- PANCHATATVA FARMS — Migration 003: Fix settlement delete FK
+-- TINYLEDGER — Migration 003: Fix settlement delete FK
 -- Run this in: Supabase Dashboard > SQL Editor > New Query
 -- Run AFTER 001_schema.sql and 002_splits.sql
 -- ============================================================
