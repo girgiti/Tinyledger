@@ -1,0 +1,19 @@
+name: Daily Tinyledger Backup
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # 1:00 AM UTC every day
+  workflow_dispatch:        # allow manual trigger from GitHub UI
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Supabase backup function
+        run: |
+          curl -X POST \
+            "${{ secrets.SUPABASE_FUNCTION_URL }}/daily-backup" \
+            -H "Authorization: Bearer ${{ secrets.BACKUP_SECRET }}" \
+            -H "Content-Type: application/json" \
+            --fail \
+            --show-error
