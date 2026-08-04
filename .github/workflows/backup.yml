@@ -1,8 +1,13 @@
 name: Daily Tinyledger Backup
 
+# The nightly schedule is disabled by default in this template repo, since it
+# would otherwise run every night against blank secrets and fail. Once you've
+# forked this, set up your own Supabase project and added SUPABASE_FUNCTION_URL
+# + BACKUP_SECRET under Settings → Secrets and variables → Actions, uncomment
+# the schedule block below to enable automatic nightly backups.
 on:
-  schedule:
-    - cron: '0 1 * * *'   # 1:00 AM UTC every day
+  # schedule:
+  #   - cron: '0 1 * * *'   # 1:00 AM UTC every day
   workflow_dispatch:        # allow manual trigger from GitHub UI
 
 jobs:
